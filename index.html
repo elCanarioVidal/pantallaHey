@@ -12,11 +12,6 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
-    <script type="text/javascript">
-    	$('.Nom-birra').each((i, Nom-birra) => {Nom-birra.html(canillas[i]);
-		});
-    </script>
   </head>
   <body>
 
@@ -131,6 +126,11 @@
 		  'canilla 17',
 		  'canilla 18',
 		];
+	    $(window).on('load', function () {
+		$('.Nom-birra').each(function (i, nomBirra) {
+			nomBirra.innerHTML = canillas[i];
+		});
+	    });
     </script>
   </body>
 </html>

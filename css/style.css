@@ -1,1 +1,75 @@
-# Empty CSS file for your own CSS
+  
+@font-face {
+  font-family: 'Gloria Hallelujah';
+  src: url('../fonts/GloriaHallelujah.ttf');
+}
+
+body {
+	background-image: url('../img/bckgrnd.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-color: #333 !important;
+    counter-reset: item;
+}
+h3 {
+	font-family: 'Suez One', serif;
+	color: #fff;
+} 
+.main {
+	margin-top: 100px;
+}
+
+.pizarraBirra ol {
+   list-style: none;
+}
+.pizarraBirra li {
+   counter-increment: item;
+   margin-bottom: 5px;
+}
+.pizarraBirra li:before {
+   font-family: 'Gloria Hallelujah', cursive;	
+   content: counter(item);
+   font-size: 40px;
+   color: white;
+   width: 30px;
+   text-align: center;
+   display: inline-block;
+   padding: 5px;
+   vertical-align: top;
+}
+.izquierda li:before {
+   margin-right: 15px;
+}
+.derecha li:before {
+   margin-right: 25px;
+}
+
+.nom-birra{
+	color: white;
+}
+.variedad{
+	font-family: 'Gloria Hallelujah', cursive;
+	font-weight: 700;
+	font-size: 60px;
+}
+.marca{
+	font-family: 'Gloria Hallelujah', cursive;
+	font-weight: 400;
+	font-size: 40px;	
+}
+
+.amarillo{
+	color: rgba(237, 238, 160, 0.95);
+}
+.rojo {
+	color: rgba(250, 143, 143, 0.95);
+}
+.celeste{;
+	color: rgba(120, 227, 237, 0.95);
+}
+.verde {
+	color: rgba(140, 237, 120, 0.95);
+}
+.naranja {
+	color: rgba(247, 192, 110, 0.95);
+}
